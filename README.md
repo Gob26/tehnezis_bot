@@ -46,15 +46,6 @@
 * `bot.py`: Точка входа в программу, запускает Телеграм-бота.
 * `docker-compose.yml`: Файл для оркестрации (управления) сервисами с помощью Docker (обычно включает базу данных и самого бота).
 * `pyproject.toml` и `poetry.lock`: Файлы менеджера зависимостей Poetry, описывают список библиотек, необходимых проекту
-[tool.poetry]
-name = "tehnezis-bot"  # Или другое имя вашего проекта
-version = "0.1.0"
-description = "bot для обработки Excel" 
-authors = ["gob26 profservis26@yandex.ru>"] 
-
-readme = "README.md"
-
-[tool.poetry.dependencies]
 python = "^3.12"
 pyTelegramBotAPI = "^4.24.0"
 pandas = "^2.2.3"
@@ -69,9 +60,6 @@ docker = "^7.1.0"
 aiogram = "^3.20.0"
 httpx = "^0.28.1"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api".
 * `tests/`: Папка для тестов.
 
 ## Как запустить проект
